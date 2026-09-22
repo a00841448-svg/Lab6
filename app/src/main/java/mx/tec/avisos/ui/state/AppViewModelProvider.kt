@@ -20,6 +20,14 @@ object AppViewModelProvider {
         initializer { AvisosViewModel(avisosApplication().container.avisosRepository) }
 
         initializer { PublicarViewModel(avisosApplication().container.avisosRepository) }
+
+        initializer { SesionViewModel(avisosApplication().container.sesionRepository) }
+
+        initializer { LoginViewModel(avisosApplication().container.sesionRepository) }
+
+        initializer { AvisosViewModel(avisosApplication().container.avisosRepository) }
+
+        initializer { PublicarViewModel(avisosApplication().container.avisosRepository) }
     }
 }
 
