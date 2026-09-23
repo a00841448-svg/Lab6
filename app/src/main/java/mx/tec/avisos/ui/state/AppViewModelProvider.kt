@@ -15,8 +15,6 @@ object AppViewModelProvider {
 
     val Factory = viewModelFactory {
 
-        initializer { LoginViewModel() }
-
         initializer { AvisosViewModel(avisosApplication().container.avisosRepository) }
 
         initializer { PublicarViewModel(avisosApplication().container.avisosRepository) }
@@ -24,8 +22,6 @@ object AppViewModelProvider {
         initializer { SesionViewModel(avisosApplication().container.sesionRepository) }
 
         initializer { LoginViewModel(avisosApplication().container.sesionRepository) }
-
-        initializer { AvisosViewModel(avisosApplication().container.avisosRepository) }
 
         initializer { PublicarViewModel(avisosApplication().container.avisosRepository) }
     }
