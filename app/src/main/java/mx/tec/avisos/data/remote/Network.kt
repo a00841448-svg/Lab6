@@ -11,7 +11,7 @@ import retrofit2.converter.kotlinx.serialization.asConverterFactory
 
 object Network {
 
-    private const val BASE_URL = "https://startdroid.com/api/"
+    private const val BASE_URL = "https://resist-sri-survival-pgp.trycloudflare.com/api/"
 
     private val json = Json {
         ignoreUnknownKeys = true
